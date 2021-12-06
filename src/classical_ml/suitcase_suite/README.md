@@ -22,8 +22,13 @@ python3 getSamples.py
 
 2. These spliced wav files representing a word are padded to ensure that the dimensions of the obtained MFCC representations across all words are uniform. Further, to augment the data we add noise to the spliced wav files and padd these files. To pad and add noise, the following python code is run:  
 
+Add noise to the spliced word .wav files
 ```
-python3 audio_preprocess_experiments.py
+python3 audio_preprocess_experiments.py noise
+```
+Pad the spliced word .wav files and the noise-added word .wav files 
+```
+python3 audio_preprocess_experiments.py pad
 ```
 
 3. We convert the spliced audio files to corresponding MFCCs and create a test CSV file. (The very first run should always use **--create** to generate the **test dataset CSV**). We **use the training CSV file obtained from the larger subset of speaker directories** (when we run the model in classical_ml directory)
