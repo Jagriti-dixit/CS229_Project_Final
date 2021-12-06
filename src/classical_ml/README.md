@@ -1,8 +1,8 @@
-This is the code directory for our implementation of **two Classical ML models used as baseline techniques** for the Accent Recognition System.\
+This is the code directory for our implementation of **two Classical ML models used as baseline techniques** for the Accent Recognition System.  
 
-The techniques used for baselining are:\
-**1. Gaussian Naive Bayes**\
-**2. Logistic Regression**\
+The techniques used for baselining are:  
+**1. Gaussian Naive Bayes**  
+**2. Logistic Regression**  
 
 
 The code directory contains the following files:\
