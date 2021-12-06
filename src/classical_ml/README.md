@@ -62,4 +62,4 @@ python3 accent_recognition.py --load <training file> <testing file>
 ```
 
 ## Suitcase Corpus ##
-This portion of the L2-ARCTIC corpus involves spontaneous speech. We use this an additional testing dataset for our model. Please refer to the README inside the suitcase_suite directory for additional details.
+This portion of the L2-ARCTIC corpus involves spontaneous speech. We use this an additional testing dataset for our model. Please refer to the README.md inside the suitcase_suite directory for additional details.
