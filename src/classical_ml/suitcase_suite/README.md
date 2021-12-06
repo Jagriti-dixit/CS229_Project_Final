@@ -1,9 +1,12 @@
+## Suitcase Corpus ##
+
 This is the code directory for preprocessing and testing the two Classical ML models used as baseline techniques on the suitcase_corpus subset of the L2 arctic dataset.
 
-The code directory contains the following files:
-**1. accent_recognition_suitcase.py** - This is the primary script for running the baseline models.
-**2. audio_preprocess_experiments.py** - This contains the code for padding the spliced audio words, adding noise to the spliced audio words and also padding the noise-added spliced words.
-**3. audio_preprocessing_helpers.py** - This contains the code for several helper methods used by accent_recognition.py and audio_preprocess_experiments.py. Helper methods include extracting MFCC features from an audio file, audio augmentation helper methods to pad, add noise to audio signals, read and write audio files, obtain the maximum duration from a directory containing audio files.
+The code directory contains the following files:  
+
+**1. accent_recognition_suitcase.py** - This is the primary script for running the baseline models.  
+**2. audio_preprocess_experiments.py** - This contains the code for padding the spliced audio words, adding noise to the spliced audio words and also padding the noise-added spliced words.  
+**3. audio_preprocessing_helpers.py** - This contains the code for several helper methods used by accent_recognition.py and audio_preprocess_experiments.py. Helper methods include extracting MFCC features from an audio file, audio augmentation helper methods to pad, add noise to audio signals, read and write audio files, obtain the maximum duration from a directory containing audio files.  
 **4. getSamples.py** - Splices the sentences spoken by the speakers in the original dataset audio files to individual words. 
 
 ## Dataset Details ##
