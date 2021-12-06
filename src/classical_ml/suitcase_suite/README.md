@@ -35,5 +35,5 @@ python3 accent_recognition_suitcase.py --create <training file> <testing file>
 For the subsequent runs (or when the test CSV is readily available), we can choose to just load the CSVs and run the model on them:
 
 ```
-python3 accent_recognition.py --load <training file> <testing file>
+python3 accent_recognition_suitcase.py --load <training file> <testing file>
 ```
