@@ -17,7 +17,7 @@ The code directory contains the following files:
 Run the commands below to install the necessary libraries:
 
 ```
-pip3 install numpy pandas librosa praatio soundfile matplotlib comet_ml pydub scikit-learn pathlib zipfile io
+pip3 install numpy pandas librosa praatio soundfile matplotlib comet_ml pydub scikit-learn pathlib io
 ```
 
 
