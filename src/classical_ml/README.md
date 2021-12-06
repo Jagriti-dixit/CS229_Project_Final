@@ -55,7 +55,7 @@ python3 audio_preprocess_experiments.py
 python3 accent_recognition.py --create <training file> <testing file>
 ```
   
-For the subsequent runs (or when the test and train CSVs are readily available), we can choose to just load teh CSVs and run the model on them:
+For the subsequent runs (or when the test and train CSVs are readily available), we can choose to just load the CSVs and run the model on them:
 
 ```
 python3 accent_recognition.py --load <training file> <testing file>
