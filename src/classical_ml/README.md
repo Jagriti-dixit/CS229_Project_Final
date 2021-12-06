@@ -14,7 +14,10 @@ The code directory contains the following files:
 
 ## Environment Setup ##
 
-Installation of the following libraries is necessary before the **accent_recognition.py** 
+Run the commands below to install the necessary libraries:
+
+pip3 install numpy pandas librosa praatio soundfile matplotlib comet_ml pydub scikit-learn pathlib zipfile io
+
 
 
 
