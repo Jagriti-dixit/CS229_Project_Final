@@ -3,3 +3,9 @@ This is the source code directory for our Accent Recognition System developed fo
 The source code is primarily subdivided into two directories:
 1. classical_ml - This directory contains the code base for our implementation of two Classical ML models used as baseline models for our accent recognition system.
 2. cnn_dl - This directory contains the code base for our implementation of the accent recognition system.
+
+## Environment Setup ##
+The code base can be cloned using:
+
+    git clone https://github.com/Jagriti-dixit/CS229_Project_Final.git
+
