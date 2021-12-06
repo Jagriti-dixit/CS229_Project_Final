@@ -21,8 +21,14 @@ pip3 install numpy pandas librosa praatio soundfile matplotlib comet_ml pydub sc
 ```
 
 ## Dataset Details ##
+For this project, the [L2-ARCTIC corpus](https://psi.engr.tamu.edu/l2-arctic-corpus/) was used.This is a non-native (or L2) English speech corpus that is
+intended for research in voice conversion, accent conversion, and mispronunciation detection. In total, the corpus contains 26,867 utterances from 24 non-native speakers with a balanced gender for six different languages: Arabic, Mandarin, Hindi,Korean, Spanish and Vietnamese.
 
+**We make use of a smaller subset of this dataset that corresponds to the Arabic, Hindi and Chinese language for training and testing our accent recognition system**
 
+Note: The dataset has to be obtained by a request on the link provided. 
+
+We unzip and place the directories correspoding to the speakers (such as "ABA", "BWC") within the **classical_ml** directory
 
 ## Steps to Run the Model ##
                                  
