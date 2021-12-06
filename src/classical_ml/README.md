@@ -6,11 +6,12 @@ The techniques used for baselining are:
 **1. Gaussian Naive Bayes**  
 **2. Logistic Regression**  
 
-The code directory contains the following files:  
+The code directory contains the following files and a directory:  
 **1. accent_recognition.py** - This is the primary script for running the baseline models.   
 **2. audio_preprocess_experiments.py** - This contains the code for padding the spliced audio words, adding noise to the spliced audio words and also padding the noise-added spliced words.  
 **3. audio_preprocessing_helpers.py** - This contains the code for several helper methods used by accent_recognition.py and audio_preprocess_experiments.py. Helper methods include extracting MFCC features from an audio file, audio augmentation helper methods to pad, add noise to audio signals, read and write audio files, obtain the maximum duration from a directory containing audio files.  
 **4. getSamples.py** - Splices the sentences spoken by the speakers in the original dataset audio files to individual words.
+**5. suitcase_suite** - The code directory for preprocessing and running the test on the suitcase_corpus subset of the dataset
 
 
 ## Environment Setup ##
@@ -41,3 +42,24 @@ Note: The dataset has to be obtained by a request on the link provided.
 ```
 python3 getSamples.py
 ```
+
+2. These spliced wav files representing a word are padded to ensure that the dimensions of the obtained MFCC representations across all words are uniform. Further, to augment the data we add noise to the spliced wav files and padd these files. To pad and add noise, the following python code is run:  
+
+```
+python3 audio_preprocess_experiments.py
+```
+
+3. After the data preprocessing, we generate the design matrix for the model training and testing and run the models on the CSV files obtained. (The very first run should always use **--create** to generate the dataset CSVs (for testing and training).
+
+```
+python3 accent_recognition.py --create <training file> <testing file>
+```
+  
+For the subsequent runs (or when the test and train CSVs are readily available), we can choose to just load teh CSVs and run the model on them:
+
+```
+python3 accent_recognition.py --load <training file> <testing file>
+```
+
+## Suitcase Corpus ##
+This portion of the L2-ARCTIC corpus involves spontaneous speech. We use this an additional testing dataset for our model. Please refer to the README inside the suitcase_suite directory for additional details.
