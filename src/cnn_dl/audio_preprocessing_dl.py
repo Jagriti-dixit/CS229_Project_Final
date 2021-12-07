@@ -9,7 +9,8 @@ import random
 
 #actual dataset reading
 metadata_file = './accent_data.csv'
-dirPath = "/home/paavni/processed_data/"
+#dirPath = "/home/paavni/processed_data/"
+dirPath = './'
 #Check if the file exists that can be loaded to the dataFrame 
 df = pd.read_csv(metadata_file)
 df['relative_path'] =  df['Speaker'].astype(str) 
