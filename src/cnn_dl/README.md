@@ -1,6 +1,48 @@
 ## Overview ##
 
-The CNN implementation is implemented in cnn_model.py. The CNN architecture is *INSERT CNN architecture description*
+The CNN implementation is implemented in cnn_model.py. The CNN architecture is described below:  
+```
+
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 102, 20, 1)]      0         
+_______________________
+conv2d (Conv2D)              (None, 102, 20, 32)       320       
+_______________________
+conv2d_1 (Conv2D)            (None, 102, 20, 64)       18496     
+_______________________
+conv2d_2 (Conv2D)            (None, 102, 10, 64)       36928     
+_______________________
+average_pooling2d (AveragePo (None, 102, 5, 64)        0         
+_______________________
+conv2d_3 (Conv2D)            (None, 102, 5, 128)       73856     
+_______________________
+conv2d_4 (Conv2D)            (None, 102, 5, 128)       147584    
+_______________________
+conv2d_5 (Conv2D)            (None, 102, 5, 256)       295168    
+_______________________
+max_pooling2d (MaxPooling2D) (None, 51, 2, 256)        0         
+_______________________
+time_distributed (TimeDistri (None, 51, 2, 128)        32896     
+_______________________
+time_distributed_1 (TimeDist (None, 51, 2, 128)        16512     
+_______________________
+time_distributed_2 (TimeDist (None, 51, 2, 64)         8256      
+_______________________
+time_distributed_3 (TimeDist (None, 51, 2, 32)         2080      
+_______________________
+flatten (Flatten)            (None, 3264)              0         
+_______________________
+dense_4 (Dense)              (None, 16)                52240     
+_______________________
+dense_5 (Dense)              (None, 3)                 51        
+_______________________
+activation (Activation)      (None, 3)                 0         
+=================================================================
+Total params: 684,387
+Trainable params: 684,387
+Non-trainable params: 0
+```
 
 The code directory includes the following directories and files
     1. ./src/cnn_model.py – This is the primary script for training or loading the CNN model and for inference.
