@@ -45,9 +45,9 @@ Non-trainable params: 0
 ```
 
 The code directory includes the following directories and files  
-    1. ./src/cnn_model.py – This is the primary script for training or loading the CNN model and for inference.  
-    2. ./models/ - This directory includes saved models from the best results callbacks (including best accuracy and least loss).  
-    3. ./logs/ – This directory is the output of the tensorboard loggings for a visual graphical interpretation of the run.  
+1. cnn_model.py – This is the primary script for training or loading the CNN model and for inference.  
+2. models/ - This directory will be populated by saved models from the best results callbacks (including best accuracy and least loss).  
+3. logs/ – This directory will contain the output of the tensorboard loggings for a visual graphical interpretation of the run.    
     
     
 ## Environment Setup ##
