@@ -35,6 +35,12 @@ Note: The dataset has to be obtained by a request on the link provided.
 
 **We unzip and place the directories correspoding to the speakers (such as "ABA", "BWC") within the classical_ml directory.**  
 
+Note: The dataset generation takes quite a while!
+A link to the datasets we generated are:
+1. Training - []()
+2. Testing - []()
+3. Suitcase Corpus Testing - [suitcase_test.csv](https://drive.google.com/file/d/1NXbeTS0j7c56cweYwuzXSLMiII-yNX1X/view?usp=sharing)
+
 
 ## Steps to Run the Model ##
 
