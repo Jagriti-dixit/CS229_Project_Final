@@ -73,6 +73,7 @@ python3 accent_recognition.py --load <training file> <testing file>
 ```
 python3 pca.py <input_train_file> <input_test_file>
 ```
+The script generates two files: **train_pca.csv** and **test_pca.csv** in the current directory, which may be used for running the models.
 
 ## Suitcase Corpus ##
 This portion of the L2-ARCTIC corpus involves spontaneous speech. We use this an additional testing dataset for our model. Please refer to the README.md inside the suitcase_suite directory for additional details.
