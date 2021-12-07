@@ -11,8 +11,9 @@ The code directory contains the following files and a directory:
 **2. accent_recognition.py** - This is the primary script for running the baseline models.   
 **3. audio_preprocess_experiments.py** - This contains the code for padding the spliced audio words, adding noise to the spliced audio words and also padding the noise-added spliced words.  
 **4. audio_preprocessing_helpers.py** - This contains the code for several helper methods used by accent_recognition.py and audio_preprocess_experiments.py. Helper methods include extracting MFCC features from an audio file, audio augmentation helper methods to pad, add noise to audio signals, read and write audio files, obtain the maximum duration from a directory containing audio files.  
-**5. getSamples.py** - Splices the sentences spoken by the speakers in the original dataset audio files to individual words.
-**6. suitcase_suite** - The code directory for preprocessing and running the test on the suitcase_corpus subset of the dataset
+**5. pca.py** - This code takes in an input csv and performs Principal Component Analysis for dimensionality reduction and produces an output csv for training and testing.
+**6. getSamples.py** - Splices the sentences spoken by the speakers in the original dataset audio files to individual words.
+**7. suitcase_suite** - The code directory for preprocessing and running the test on the suitcase_corpus subset of the dataset
 
 
 ## Environment Setup ##
@@ -66,6 +67,11 @@ For the subsequent runs (or when the test and train CSVs are readily available),
 
 ```
 python3 accent_recognition.py --load <training file> <testing file>
+```
+
+4. Dimensionality Reduction using PCA - In case we wish to perform PCA reduction on the training CSV file we can use the **pca.py** scripts:
+```
+python3 pca.py <input_file> <output_file>
 ```
 
 ## Suitcase Corpus ##
