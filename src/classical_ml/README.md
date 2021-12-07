@@ -69,9 +69,9 @@ For the subsequent runs (or when the test and train CSVs are readily available),
 python3 accent_recognition.py --load <training file> <testing file>
 ```
 
-4. Dimensionality Reduction using PCA - In case we wish to perform PCA reduction on the training CSV file we can use the **pca.py** scripts:
+4. Dimensionality Reduction using PCA - In case we wish to perform PCA reduction on the training and testing CSV file we can use the **pca.py** script:
 ```
-python3 pca.py <input_file> <output_file>
+python3 pca.py <input_train_file> <input_test_file>
 ```
 
 ## Suitcase Corpus ##
