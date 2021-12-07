@@ -1,0 +1,11 @@
+Serial,Speaker,Gender,Native_Language,# Wav Files,# Annotations
+1,aba,M,Arabic,1129,150
+3,ybaa,M,Arabic,1130,149
+4,zhaa,F,Arabic,1132,150
+5,bwc,M,Chinese,1130,150
+6,lxc,F,Chinese,1131,150
+7,ncc,F,Chinese,1131,150
+8,txhc,M,Chinese,1132,150
+10,rrbi,M,Hindi,1130,150
+11,svbi,F,Hindi,1132,150
+12,tni,F,Hindi,1131,150
