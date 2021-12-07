@@ -11,6 +11,15 @@ The code directory includes the following directories and files
 ## Environment Setup ##
 Installation of tensorflow and tensorboard in addition to classical ML libraries such as Librosa and Scikit-Learn.
 
+## Datasets ##
+
+Note: The dataset generation takes quite a while!
+A link to the datasets we generated are:
+1. Training - [training_102x20.csv](https://drive.google.com/file/d/1QYS2nsAHJcPcTEhIpo_-JR6irgGj8YcQ/view?usp=sharing)
+2. Testing - [testing_102x20.csv](https://drive.google.com/file/d/1fKLmSCZFzftkexYhZL6sQduAIS6HkGDY/view?usp=sharing)
+3. Suitcase Corpus Testing - [suitcase_corpus_test_102x20.csv](https://drive.google.com/file/d/10eWpdF2MeupwbSnv9nvn-z5cmcfacUC3/view?usp=sharing)
+
+
 ## Steps to Run the Model ##
 **1. Adjust the input parameters in cnn_model.py:**   
 a. EPOCHS is the maximum number of epochs to be run.  
