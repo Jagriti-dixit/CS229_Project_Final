@@ -12,6 +12,17 @@ The code directory includes the following directories and files
 Installation of tensorflow and tensorboard in addition to classical ML libraries such as Librosa and Scikit-Learn.
 
 ## Datasets ##
+The datasets were obtained by running the following helper python scripts:
+
+```
+python3 audio_preprocessing_dl.py
+```
+
+For the suitcase_corpus test dataset generation:
+```
+python3 audio_preprocessing_dl_suitcase.py
+```
+
 
 Note: The dataset generation takes quite a while!
 A link to the datasets we generated are:
