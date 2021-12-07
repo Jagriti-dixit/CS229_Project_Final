@@ -155,7 +155,7 @@ else:
     print(gnb.__class__.__name__+" Recall score  is %2.3f" % recall_score(Y_test, Y_pred,average='macro'))
     print(gnb.__class__.__name__+" Precision score  is %2.3f" % precision_score(Y_test, Y_pred,average='macro'))
     titles_options = [
-    ("Gaussian Naive Bayes", "true")
+    ("Gaussian Naive Bayes (Arabic=1, Hindi=2, Chinese=3)", "true")
     ]
     for title, normalize in titles_options:
         disp = ConfusionMatrixDisplay.from_estimator(
@@ -170,7 +170,7 @@ else:
 
     print(title)
     print(disp.confusion_matrix)
-    plt.show()
+    plt.savefig("GaussianNB_Conf.png")
     print(classification_report(Y_test, Y_pred))
 
     #Implement & Run the Logistic Regression model
@@ -187,7 +187,7 @@ else:
     print(logreg.__class__.__name__+" Recall score  is %2.3f" % recall_score(Y_test, Y_pred,average='macro'))
     print(logreg.__class__.__name__+" Precision score  is %2.3f" % precision_score(Y_test, Y_pred,average='macro'))
     titles_options = [
-    ("Logistic Regression", "true")
+    ("Logistic Regression (Arabic=1, Hindi=2, Chinese=3)", "true")
     ]
     for title, normalize in titles_options:
         disp = ConfusionMatrixDisplay.from_estimator(
@@ -202,5 +202,5 @@ else:
 
     print(title)
     print(disp.confusion_matrix)
-    plt.show()
+    plt.savefig("Logistic_Conf.png")
     print(classification_report(Y_test, Y_pred))
