@@ -38,7 +38,7 @@ test_filename = 'testing_102x20.csv'
 ## Saved Model Path and Filenames
 model_filepath_loss = './models/best_model_loss_run11.h5'
 model_filepath_accuracy = './models/best_model_loss_run11.h5'
-model_filepath_saved = './models/best_model_run11.h5'
+model_filepath_saved = 'run11'
 
 class params:
     sampling_rate = 22050 # Hz
